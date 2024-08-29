@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: right;
 }
 
 .empty-message {
@@ -60,5 +61,41 @@
 
 .share-alt {
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .favorite-movie-list {
+    padding: 20px 40px;
+  }
+  .title__container {
+    padding: 0.5rem;
+
+    flex-direction: row;
+    align-items: center;
+  }
+  .title__container h1 {
+    font-size: 1.8rem;
+  }
+  .title__container button {
+    width: 120px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title__container {
+    padding: 0.5rem;
+  }
+  .title__container h1 {
+    font-size: 1.5rem;
+  }
+  .title__container button {
+    width: 100px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .share-alt {
+    font-size: 10px;
+  }
 }
